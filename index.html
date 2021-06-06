@@ -1,0 +1,190 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Lato|Sigmar+One&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+<div class="content">
+  <div class="card">
+
+    <div class="left">
+
+      <img src="https://cdn.discordapp.com/attachments/836579209756540993/838766173487104020/unknown.png">
+
+    </div>
+
+    <div class="right">
+        <div class="top">
+          <p class="title">John doe</p>
+          <p class="desc">Designer Web</p>
+        </div>
+
+      <div class="middle column">
+    
+          <a href="#"><i class="fas fa-at"></i> 1 Janvier 1986</a>
+          <a href="#"><i class="fas fa-phone"></i> 06.00.00.00.00</a>
+          <a href="#"><i class="fas fa-envelope"></i> John.doe@gmail.com</a>
+          <a href="#"><i class="fas fa-map-marker-alt"></i></i> Cholet</a>
+    
+      </div>
+
+      <div class="items">
+        <ul>
+
+          <li>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </li>
+
+        </ul>
+      </div>
+
+    </div>
+
+
+  </div>
+</div>
+
+</body>
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  text-decoration: none;
+  list-style: none;
+  font-family: Lato;
+}
+
+
+.content{
+  background: linear-gradient(#00C9FF, #92FE9D);
+  height:100vh;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.card{
+  min-height:400px;
+  width:800px;
+  background:white;
+  padding:10px 30px;
+  margin:20px;
+
+  border-radius: 10px;
+
+  display:flex;
+  flex-wrap:wrap;
+
+  transition: .3s padding;
+}
+.card .left{
+  flex:1;
+  display:flex;
+  align-items:center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.card .left img{
+  width:300px;
+  height:300px;
+  border-radius: 55px;
+}
+.card .right{
+  flex:1;
+  display:flex;
+  justify-content: space-around;
+  flex-direction: column;
+
+}
+.title{
+  font-size:30px;
+  font-family: Sigmar One;
+}
+.desc{
+  font-size:20px;
+
+}
+
+.right .middle {
+  display:flex;
+  font-size:25px;
+}
+.right .middle i {
+  color:#00C9FF;
+  width:30px;
+}
+.right .middle a{
+  color:black;
+}
+
+.right .items ul{
+  display: flex;
+
+}
+.right .items ul a i{
+  font-size:30px;
+  margin-right:15px;
+  color:#00C9FF;
+  transition: transform .5s,color .3s;
+
+}
+.right .items ul a i:hover{
+  transform:scale(1.3);
+  color:#92FE9D;
+}
+
+.column{
+  display:flex;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 700px) {
+  .card{
+    display:flex;
+    flex-direction: column;
+    width:90%;
+    border-radius: 0;
+    padding: 80px 30px;
+  }
+  .card .left img {
+    width:200px;
+    height:200px;
+  }
+  .card .right{
+    justify-content: center;
+    align-items: center;
+
+  }
+  .right .items ul{
+    margin-top:30px;
+  }
+  .middle{
+    align-items: flex-start;
+
+  }
+  .top{
+    text-align:center;
+  }
+}
+</style>
+</html>
